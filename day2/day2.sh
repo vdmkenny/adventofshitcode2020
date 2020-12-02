@@ -27,9 +27,6 @@ parsepolicy_part2(){
       policyMatches=$(($policyMatches + 1))
     elif [ "$char1" != "$passChar" ] && [ "$char2" == "$passChar" ]; then
       policyMatches=$(($policyMatches + 1))
-    else
-      echo "$policy didn't match"
-      echo "$pos1:$char1 $pos2:$char2"
     fi
 }
 
